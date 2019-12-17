@@ -1,4 +1,8 @@
+// In C 
+// use array of characters and '\0' terminated
+
 #include <iostream>
+
 using namespace std;
 
 int main()

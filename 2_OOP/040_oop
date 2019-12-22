@@ -1,0 +1,40 @@
+Object-Oriented Programming(OOP)
+
+Content
+	- Classes and Objects
+	- Advanced Class Features
+	- Operator overloading
+	- Object Relationships
+	- Abstraction
+
+	Classes and Objects
+		- Members of the class. Access levels . Encapsulation.
+		- Class: interface + implementation
+		- Constructors and destructors
+		- const member functions
+		- Constructor initializer
+		- Copy constructor
+		- Object's life cycle
+
+	Types of Classes
+		- Polymorphic Classes <designed for extension>
+		- Value classes <designed for storing values>
+		- RAII ( Resource Acquisition Is Initialization)
+			encapsulate a resource into a class --> resource lifetime object life time
+			* thread, unique_ptr, ..
+
+	Class = type ( Data + Operation)
+		- Data
+			- data members( properties, attributes )
+		- Operation
+			- methods(behaviour)
+		- Each member is associated with an access level
+			- private
+			- public
+			- protected
+
+	Object = Instance of a class
+		- properties, behaviours
+
+	Employee.h ( Interface )
+	Employee.xpp ( Implementation )

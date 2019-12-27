@@ -16,17 +16,22 @@ public:
 		name = n;
 	}
 	
-	string getName()
+	string getName() const
 	{
 		return name;
 	}
+
+	string displayName()
+	{
+		return name;
+	}	
 
 	void setAge(int n)
 	{
 		age = n;
 	}
 
-	int getAge()
+	int getAge() const
 	{
 		return age;
 	}
@@ -36,7 +41,7 @@ public:
 		education = edu;
 	}
 
-	string getEdu()
+	string getEdu() const
 	{
 		return education;
 	}

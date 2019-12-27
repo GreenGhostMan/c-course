@@ -8,7 +8,7 @@ private:
 	int salary;
 public:
 	void setSalary(int i) { salary= i;};
-	int getSalary() { return salary; };
+	int getSalary() const{ return salary; };
 };
 
 class RomRoboticsEmployee : public Employee
@@ -17,7 +17,7 @@ private:
 	int salary;
 public:
 	void setSalary(int i) { salary=i; };
-	int getSalary() { return salary; };
+	int getSalary() const { return salary; };
 };
 
 int main(){

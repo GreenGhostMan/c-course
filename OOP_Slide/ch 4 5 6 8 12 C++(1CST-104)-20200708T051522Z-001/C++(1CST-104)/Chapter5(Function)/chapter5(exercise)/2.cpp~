@@ -1,0 +1,34 @@
+#include<iostream.h>
+#include<conio.h>
+double power(double, int p=2);
+
+int main()
+{
+	int number,ans,p;
+	char ch;
+	cout<<"Enter a number:";
+	   cin>>number;
+	cout<<"Add a power?(y or n):";
+     	cin>>ch;
+
+     if(ch=='y')
+     {
+       cout<<"Enter power:";
+    	  cin>>p;
+     	ans=power(number,p);
+      cout<<ans;
+	  }
+      else
+         ans=power(number,2);
+         cout<<ans;
+  
+return 0;
+}
+double power(double n, int p)
+{
+	
+	double result=1.0;
+	for(int i=1; i<=p; i++)
+	 return result*=n;
+
+}

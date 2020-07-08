@@ -1,0 +1,66 @@
+#include<iostream.h>
+#include<conio.h>
+
+
+enum meridium{AM,PM};
+
+	struct timee{
+	int hr,min,sec;
+	meridium duration;
+};
+
+
+int main()
+{
+	char z;
+	timee t1;
+	cout<<"Enter hours: ";
+	cin>>t1.hr;
+	cout<<"Enter minutes: ";
+	cin>>t1.min;
+	cout<<"Enter seconds: ";
+	cin>>t1.sec;
+	cout<<"Enter meridium (a or p): ";
+	cin>>z;
+	
+	if (z =='a') 
+	 t1.duration=AM;
+{
+	  if (t1.hr<10) 
+	    cout<<"0"<<t1.hr<<":";
+       else   
+         cout<<t1.hr<<":";
+	  
+	  if (t1.min<10)  
+	    cout<<"0"<<t1.min<<":";
+	    else
+	     cout<<t1.min<<":";
+	     
+      if(t1.sec<10)  
+	      cout<<"0"<<t1.sec<<":";
+        else 
+	      cout<<t1.sec<<"AM";
+	    }
+	 
+	 
+	 if (z == 'p') 
+       t1.duration==PM;	 
+	 {
+ 		
+		 cout<<t1.hr+12<<":";
+		
+		 if (t1.min<10)  
+	       cout<<"0"<<t1.min<<":";
+	     else
+	       cout<<t1.min<<":";
+	     
+        if(t1.sec<10)  
+	      cout<<"0"<<t1.sec<<":";
+        else 
+	      cout<<t1.sec<<"PM";
+	  
+ 	}	    
+	
+	
+ return 0;
+}

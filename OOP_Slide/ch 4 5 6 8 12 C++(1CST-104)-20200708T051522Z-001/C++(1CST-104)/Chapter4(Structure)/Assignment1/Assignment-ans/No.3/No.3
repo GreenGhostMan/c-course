@@ -1,0 +1,37 @@
+#include<iostream.h>
+#include<conio.h>
+
+struct student{
+	char name[10000];
+	long roll_num;
+	
+};
+
+int main()
+{
+	student s[5];
+            
+            for(int a=0; a<=5; a++)
+
+{           cout<<"Enter Student's name:";
+			cin.get(s[a].name,10);
+            cout<<endl;
+		
+		cout<<"Enter Roll number:";
+		cin>>s[a].roll_num;
+		
+		cout<<endl<<endl;
+}
+	
+      for(int b=0; b<=5; b++)
+	
+	{
+		
+		cout<<s[b].name<<","<<s[b].roll_num;
+		cout<<endl<<endl;
+	}
+	
+	
+return 0;
+	
+}

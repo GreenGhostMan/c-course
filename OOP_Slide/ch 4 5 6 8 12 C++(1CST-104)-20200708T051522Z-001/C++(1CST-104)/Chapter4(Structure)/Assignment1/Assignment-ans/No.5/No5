@@ -1,0 +1,23 @@
+#include <iostream.h>
+
+enum meridium {AM,PM}
+
+struct timee{
+	int hour, min, sec;
+	meridium duration;
+};
+
+int main()
+{
+	timee t1;
+	cout<<"Enter hours: ";
+	cin>>hour;
+	cout<<"Enter minutes: ";
+	cin>>min;
+	cout<<"Enter seconds: ";
+	cin>>sec;
+	cout<<"Enter meridium (a or p): ";
+	cin>>t1.duration;
+	
+	return 0;
+}
